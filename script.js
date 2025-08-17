@@ -72,5 +72,9 @@ function setupPoll(pollId, storageKey, options) {
 }
 
 // Setup both polls
-setupPoll("class-poll", "poll-class", ["Warrior", "Mage", "Rogue", "Priest"]);
+setupPoll("class-poll", "poll-class", [
+  "Warrior", "Mage", "Rogue", "Priest", 
+  "Paladin", "Warlock", "Druid", "Hunter", "Shaman"
+]);
+
 setupPoll("role-poll", "poll-role", ["Tank", "Healer", "DPS"]);
