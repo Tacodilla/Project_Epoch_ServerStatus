@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Epoch Server Explorer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Epoch Server & Polls</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="hero">
     <div class="overlay">
-      <h1>Project Epoch Status</h1>
+      <h1>🛰️ Project Epoch Server Status</h1>
       <div id="status" class="status checking">Checking...</div>
       <div class="footer">Checked at: <span id="timestamp">--:--:--</span></div>
+
+      <div class="polls">
+        <h2>🧙‍♂️ What class will you play?</h2>
+        <div class="poll" id="class-poll">
+          <button data-option="Warrior">Warrior</button>
+          <button data-option="Mage">Mage</button>
+          <button data-option="Rogue">Rogue</button>
+          <button data-option="Priest">Priest</button>
+        </div>
+
+        <h2>⚔️ What role will you main?</h2>
+        <div class="poll" id="role-poll">
+          <button data-option="Tank">Tank</button>
+          <button data-option="Healer">Healer</button>
+          <button data-option="DPS">DPS</button>
+        </div>
+      </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
