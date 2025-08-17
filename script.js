@@ -11,13 +11,13 @@ async function checkServer() {
 
     if (data.online || data.debug?.ping) {
       statusEl.className = "status online";
-      statusEl.textContent = "✅ Server is ONLINE";
+      statusEl.textContent = "✅ Server ONLINE";
     } else {
-      throw new Error("Offline");
+      throw new Error();
     }
   } catch {
     statusEl.className = "status offline";
-    statusEl.textContent = "❌ Server is OFFLINE";
+    statusEl.textContent = "❌ Server OFFLINE";
   }
 
   timeEl.textContent = new Date().toLocaleTimeString();
